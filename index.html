@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple News Portal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Daily Snapshot</h1>
+      <p class="site-tagline">Short, clear news � static and fast</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Top Stories</h2>
+      <p>Click any story to open the full article in a new tab.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <img src="https://via.placeholder.com/600x300?text=Story+1" alt="Story 1" />
+        <h3>Global Markets React to New Policy</h3>
+        <p class="excerpt">Markets showed mixed responses after the government announced the new economic measures...</p>
+        <a class="read-more" href="articles/article-1.html" target="_blank" rel="noopener noreferrer">Read full article</a>
+      </article>
+
+      <article class="card">
+        <img src="https://via.placeholder.com/600x300?text=Story+2" alt="Story 2" />
+        <h3>Local Tech Startup Secures Funding</h3>
+        <p class="excerpt">A local startup focused on green tech closed a Series A round to scale manufacturing...</p>
+        <a class="read-more" href="articles/article-2.html" target="_blank" rel="noopener noreferrer">Read full article</a>
+      </article>
+
+      <article class="card">
+        <img src="https://via.placeholder.com/600x300?text=Story+3" alt="Story 3" />
+        <h3>Community Projects Bring Neighbors Together</h3>
+        <p class="excerpt">Volunteers finished a weekend of repairs and gardens at the community center...</p>
+        <a class="read-more" href="articles/article-3.html" target="_blank" rel="noopener noreferrer">Read full article</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Daily Snapshot � Static demo for GitHub Pages</small>
+    </div>
+  </footer>
+
+  <script>
+    // small script to set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
