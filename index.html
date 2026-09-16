@@ -1,27 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Home</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>News Portal — Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="header"></div>
+    <div id="header"></div>
 
-  <main>
-    <h2>Welcome to the Home Page</h2>
-    <p>This is the content of the home page.</p>
-  </main>
+    <main class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Top stories today</h1>
+                <p>Breaking news, opinion and deep coverage from around the world.</p>
+            </div>
+            <figure class="hero-media">
+                <img src="https://via.placeholder.com/900x420?text=Top+Story" alt="Top story image">
+            </figure>
+        </section>
 
-  <div id="footer"></div>
+        <section class="content-grid">
+            <div class="main-col">
+                <h2 class="section-title">Latest news</h2>
+                <div class="cards">
+                    <article class="card">
+                        <img src="https://via.placeholder.com/600x330?text=News+1" alt="">
+                        <div class="card-body">
+                            <a class="kicker" href="#">World</a>
+                            <h3><a href="#">Headline: International summit reaches agreement</a></h3>
+                            <p>Summary: Leaders agreed on a new framework to tackle the climate and trade challenges.</p>
+                            <div class="meta">By Jane Doe • 2h ago</div>
+                        </div>
+                    </article>
 
-  <script>
-    async function loadLayout(id, file) {
-      const response = await fetch(file);
-      document.getElementById(id).innerHTML = await response.text();
-    }
-    loadLayout("header", "header.html");
-    loadLayout("footer", "footer.html");
-  </script>
+                    <article class="card">
+                        <img src="https://via.placeholder.com/600x330?text=News+2" alt="">
+                        <div class="card-body">
+                            <a class="kicker" href="#">Business</a>
+                            <h3><a href="#">Markets rally after strong earnings</a></h3>
+                            <p>Summary: Stocks rose across major indexes as tech companies beat expectations.</p>
+                            <div class="meta">By John Smith • 3h ago</div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="https://via.placeholder.com/600x330?text=News+3" alt="">
+                        <div class="card-body">
+                            <a class="kicker" href="#">Tech</a>
+                            <h3><a href="#">New device promises longer battery life</a></h3>
+                            <p>Summary: A modular approach and better thermal design improve efficiency.</p>
+                            <div class="meta">By Alex Lee • 5h ago</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <aside class="side-col">
+                <div class="widget">
+                    <h3>Trending</h3>
+                    <ol class="trending">
+                        <li><a href="#">Story: Viral breakthrough in renewable energy</a></li>
+                        <li><a href="#">Opinion: What the future of cities looks like</a></li>
+                        <li><a href="#">Guide: Preparing for market volatility</a></li>
+                    </ol>
+                </div>
+
+                <div class="widget">
+                    <h3>Categories</h3>
+                    <ul class="categories">
+                        <li><a href="#">World</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Tech</a></li>
+                        <li><a href="#">Culture</a></li>
+                        <li><a href="#">Sports</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Get top stories delivered daily.</p>
+                    <form action="#" onsubmit="event.preventDefault(); alert('Subscribe stub');">
+                        <input type="email" placeholder="you@example.com" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="layout.js" defer></script>
 </body>
 </html>
