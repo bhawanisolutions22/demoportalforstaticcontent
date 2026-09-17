@@ -1,12 +1,28 @@
 /* layout.js — shared loader for header/footer and small behaviors */
+function resolveLayoutUrl(file) {
+  // Try to find the layout.js script tag so we can resolve files relative to the script location.
+  const script = document.querySelector('script[src$="layout.js"]');
+  if (script && script.src) {
+    try {
+      // layout.js is usually inside /js/ so resolve one level up to reach site root:
+      return new URL('../' + file, script.src).href;
+    } catch (e) {
+      // if URL resolution fails, fall through to root-relative
+    }
+  }
+  // Fallback: use root-relative path (works when header/footer are in site root)
+  return new URL('/' + file, location.origin).href;
+}
+
 async function loadLayout(id, file) {
+  const url = resolveLayoutUrl(file);
   try {
-    const resp = await fetch(file, {cache: "no-store"});
+    const resp = await fetch(url, { cache: "no-store" });
     if (!resp.ok) throw new Error(resp.statusText);
     document.getElementById(id).innerHTML = await resp.text();
     if (id === "header") initHeaderBehavior();
   } catch (e) {
-    console.error("loadLayout:", file, e);
+    console.error("loadLayout:", file, "resolved->", url, e);
   }
 }
 
