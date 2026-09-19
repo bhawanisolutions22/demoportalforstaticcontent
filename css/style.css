@@ -233,6 +233,39 @@ a {
     color: rgba(255,255,255,0.85)
 }
 
+/* Article image rules - append these near the end of your stylesheet */
+
+.article-media {
+    margin: 16px 0;
+    text-align: center; /* centers image when max-width applied */
+}
+
+.article-media .article-image {
+    width: 100%;
+    max-width: 1000px; /* desktop max width, adjust as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+}
+
+/* Ensure long image captions (if added later) are readable */
+.article-media figcaption {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+/* On narrow viewports keep the image full-bleed inside its container */
+@media (max-width: 720px) {
+    .article-media .article-image {
+        max-width: 100%;
+        border-radius: 6px;
+    }
+}
+
 /* Responsive */
 @media (max-width:900px) {
     .hero {
