@@ -209,30 +209,34 @@ a {
     margin: 8px 0
 }
 
-/* Article media — responsive, limited height on desktop */
+/* Article media — responsive, non-cropping */
 .article-media {
     margin: 16px 0;
     text-align: center;
 }
 
+/* Keep the full image visible (no cropping). Limit maximum rendered height so desktop images don't become huge.
+   width:100% ensures fluid layout; max-height prevents oversized vertical images on very wide screens.
+   height:auto preserves natural aspect ratio; object-fit: contain keeps the image intact if constrained. */
 .article-media .article-image {
     width: 100%;
     max-width: 900px;
-    /* limit height on larger viewports while keeping a natural look */
-    height: clamp(220px, 30vh, 420px);
-    object-fit: cover; /* crop slightly if needed to preserve a pleasing frame */
+    height: auto;
+    max-height: 60vh;     /* never exceed 60% of the viewport height on large screens */
     display: block;
     margin: 0 auto;
     border-radius: 8px;
+    object-fit: contain;
     box-shadow: 0 6px 18px rgba(16,24,40,0.06);
 }
 
-/* On small devices use natural height (no cropping) */
+/* On small devices use full width with natural height */
 @media (max-width: 720px) {
     .article-media .article-image {
+        max-width: 100%;
+        max-height: none;
         height: auto;
         object-fit: contain;
-        max-width: 100%;
         border-radius: 6px;
     }
 }
