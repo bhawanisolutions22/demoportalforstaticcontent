@@ -232,7 +232,10 @@ a {
 .site-footer p, .site-footer a {
     color: rgba(255,255,255,0.85)
 }
-
+.p{
+    margin-left:15px;
+    margin-right:15px;
+}
 /* Article image rules - append these near the end of your stylesheet */
 
 .article-media {
