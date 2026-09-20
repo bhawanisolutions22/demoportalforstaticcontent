@@ -148,7 +148,8 @@ a {
 
 .cards {
     display: grid;
-    gap: 16px
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr); /* two cards per row on desktop */
 }
 
 .card {
@@ -281,6 +282,11 @@ a {
 
     .side-col {
         order: 2
+    }
+
+    /* revert cards to single column on narrower viewports */
+    .cards {
+        grid-template-columns: 1fr;
     }
 }
 
