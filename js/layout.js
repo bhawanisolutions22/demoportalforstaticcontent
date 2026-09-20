@@ -58,3 +58,4 @@ function initHeaderBehavior() {
 // Load header/footer
 loadLayout("header", "header.html");
 loadLayout("footer", "footer.html");
+loadLayout("sidebar", "sidebar.html");
