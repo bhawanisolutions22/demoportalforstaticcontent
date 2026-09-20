@@ -181,7 +181,6 @@ a {
         object-fit: contain;
         margin: 0 0 12px 0;
     }
-}
 
 .card-body {
     padding: 12px 14px
@@ -238,7 +237,7 @@ a {
     width: 100%;
     max-width: 900px;
     height: auto;
-    max-height: 40vh;     /* never exceed 60% of the viewport height on large screens */
+    max-height: 60vh;     /* never exceed 60% of the viewport height on large screens */
     display: block;
     margin: 0 auto;
     border-radius: 8px;
