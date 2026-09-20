@@ -161,12 +161,25 @@ a {
     box-shadow: var(--shadow)
 }
 
-    .card img {
-        width: 100%;     /* fill the card width */
-        height: auto;    /* preserve aspect ratio, no cropping */
-        display: block;
-        border-radius: 0; /* keep card corners consistent; change if you prefer rounded image corners */
-        /* removed max-height and object-fit so images won't be letterboxed or cropped */
+/* Card thumbnail: render at 354x236 on desktop, shrink responsively, no cropping */
+.card > img {
+    width: 354px;           /* target desktop width */
+    height: 236px;          /* target desktop height */
+    max-width: 100%;        /* allows shrinking on narrow containers */
+    max-height: none;
+    display: block;
+    margin: 0 auto;         /* center inside the card */
+    object-fit: contain;    /* preserve entire image, no cropping */
+    background: #f5f7fa;    /* subtle neutral background if aspect differs */
+}
+
+/* revert to full-width natural height on narrower viewports */
+@media (max-width: 900px) {
+    .card > img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin: 0 0 12px 0;
     }
 
 .card-body {
