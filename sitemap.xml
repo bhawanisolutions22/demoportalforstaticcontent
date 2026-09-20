@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
 	<url>
 		<loc>https://ambknews.com/en/business/story/upi-remains-free-for-p2p-and-most-merchant-payments-202609162105.html</loc>
 		<lastmod>2026-09-16</lastmod>
+        <image:image>
+            <image:loc>https://ambknews.com/images/articles/202609162105.png</image:loc>
+            <image:caption>UPI digital payment using a QR code at a small merchant's shop in India.</image:caption>
+        </image:image>
 	</url>
 </urlset>
