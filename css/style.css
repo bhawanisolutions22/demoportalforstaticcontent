@@ -162,11 +162,11 @@ a {
 }
 
     .card img {
-        width: 100%;
-        height: auto;            /* allow natural height so image isn't cropped */
-        max-height: 220px;      /* prevent excessively tall images on desktop */
-        object-fit: contain;    /* preserve whole image inside the box */
+        width: 100%;     /* fill the card width */
+        height: auto;    /* preserve aspect ratio, no cropping */
         display: block;
+        border-radius: 0; /* keep card corners consistent; change if you prefer rounded image corners */
+        /* removed max-height and object-fit so images won't be letterboxed or cropped */
     }
 
 .card-body {
