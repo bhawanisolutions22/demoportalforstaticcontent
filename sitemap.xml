@@ -8,7 +8,24 @@
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
-
+	<url>
+		<loc>https://ambknews.com/world.html</loc>
+		<lastmod>2026-09-21T08:17:00+05:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/national.html</loc>
+		<lastmod>2026-09-20T15:18:00+05:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/international/north-korea-fires-ballistic-missile-off-east-coast-seoul-condemns-violation-of-un-resolutions-202609210741.html</loc>
+		<lastmod>2026-09-21T07:41:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
+	</url>
 	<url>
 		<loc>https://ambknews.com/en/bollywood/hanuman-ansh-box-office-day-44-neem-karoli-baba-film-surpasses-300-crore-worldwide-202609201707.html</loc>
 		<lastmod>2026-09-20T17:07:00+05:30</lastmod>
