@@ -20,6 +20,13 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
+		<loc>https://ambknews.com/en/international/trump-and-xi-discuss-trade-tech-taiwan-and-ai-summit-ends-without-breakthrough-202609270926.html</loc>
+		<lastmod>2026-09-27T09:26:00+00:00</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<url>
 		<loc>https://ambknews.com/en/international/trump-rejects-irans-hormuz-proposal-iraq-seeks-sanctions-relief-for-humanitarian-flights-202609270834.html</loc>
 		<lastmod>2026-09-27T08:34:00+00:00</lastmod>
 		<changefreq>never</changefreq>
