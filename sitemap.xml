@@ -20,6 +20,12 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
+		<loc>https://ambknews.com/en/international/russia-endorses-indias-bid-for-permanent-seat-in-un-security-council-202609280737.html</loc>
+		<lastmod>2026-09-28T07:37:00+00:00</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
 		<loc>https://ambknews.com/privacy-policy.html</loc>
 		<lastmod>2026-09-27T09:26:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -31,7 +37,6 @@
 		<changefreq>never</changefreq>
 		<priority>0.8</priority>
 	</url>
-
 	<url>
 		<loc>https://ambknews.com/en/international/trump-rejects-irans-hormuz-proposal-iraq-seeks-sanctions-relief-for-humanitarian-flights-202609270834.html</loc>
 		<lastmod>2026-09-27T08:34:00+00:00</lastmod>
