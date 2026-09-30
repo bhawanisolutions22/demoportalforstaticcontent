@@ -20,17 +20,23 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
-  <loc>https://ambknews.com/en/business/story/gold-slips-below-rs-1-5-lakh-per-10g-in-delhi-202609292051.html</loc>
-  <lastmod>2026-09-29T20:51:00+00:00</lastmod>
-  <changefreq>never</changefreq>
-  <priority>0.8</priority>
-</url>
+		<loc>https://ambknews.com/en/international/india-south-korea-strengthen-defence-industry-logistics-ties-202609300543.html</loc>
+		<lastmod>2026-09-30T05:43:00+00:00</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
+	</url>
 	<url>
-  <loc>https://ambknews.com/en/international/india-france-expand-higher-education-research-ties-202609290746.html</loc>
-  <lastmod>2026-09-29T07:46:00+00:00</lastmod>
-  <changefreq>never</changefreq>
-  <priority>0.8</priority>
-</url>
+		<loc>https://ambknews.com/en/business/story/gold-slips-below-rs-1-5-lakh-per-10g-in-delhi-202609292051.html</loc>
+		<lastmod>2026-09-29T20:51:00+00:00</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/international/india-france-expand-higher-education-research-ties-202609290746.html</loc>
+		<lastmod>2026-09-29T07:46:00+00:00</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
+	</url>
 	<url>
 		<loc>https://ambknews.com/en/international/russia-endorses-indias-bid-for-permanent-seat-in-un-security-council-202609280737.html</loc>
 		<lastmod>2026-09-28T07:37:00+00:00</lastmod>
@@ -130,17 +136,17 @@
 	<url>
 		<loc>https://ambknews.com/en/business/story/upi-remains-free-for-p2p-and-most-merchant-payments-202609162105.html</loc>
 		<lastmod>2026-09-16</lastmod>
-        <image:image>
-            <image:loc>https://ambknews.com/images/articles/202609162105.png</image:loc>
-            <image:caption>UPI digital payment using a QR code at a small merchant's shop in India.</image:caption>
-        </image:image>
+		<image:image>
+			<image:loc>https://ambknews.com/images/articles/202609162105.png</image:loc>
+			<image:caption>UPI digital payment using a QR code at a small merchant's shop in India.</image:caption>
+		</image:image>
 	</url>
 	<url>
 		<loc>https://ambknews.com/en/business/story/unemployment-rate-declines-flagship-schemes-l-murugan-202609201042.html</loc>
 		<lastmod>2026-09-20</lastmod>
-        <image:image>
-            <image:loc>https://ambknews.com/images/articles/202609201042.jpeg</image:loc>
-            <image:caption>Union Minister L. Murugan at the Rozgar Mela handing out appointment letters.</image:caption>
-        </image:image>
+		<image:image>
+			<image:loc>https://ambknews.com/images/articles/202609201042.jpeg</image:loc>
+			<image:caption>Union Minister L. Murugan at the Rozgar Mela handing out appointment letters.</image:caption>
+		</image:image>
 	</url>
 </urlset>
