@@ -360,19 +360,31 @@ a {
     padding: 0.25rem 0.35rem;
 }
 
-/* Make the icon match the text height (keeps it visually aligned) */
-.social-icon {
-    height: 16px;    /* small desktop size */
+/* Reduce footer Facebook icon size (targets current markup) */
+.site-footer .social-links img {
+    height: 12px !important; /* smaller desktop size */
     width: auto;
-    display: block;
+    display: inline-block;
     object-fit: contain;
     vertical-align: middle;
 }
 
-/* Slightly larger for touch targets on small screens */
+/* Keep link spacing / alignment comfortable without enlarging the icon */
+.site-footer .social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.25rem 0.35rem;
+}
+
+/* Slightly increase on small screens for touch friendliness */
 @media (max-width: 480px) {
-    .social-icon {
-        height: 20px;
+    .site-footer .social-links img {
+        height: 14px !important;
+    }
+    .site-footer .social-links a {
+        padding: 0.45rem 0.6rem;
+        font-size: 0.95rem;
     }
 }
 
