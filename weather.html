@@ -3,8 +3,65 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <title>Weather — AmbkNews</title>
+
     <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYZCB2XSSN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JYZCB2XSSN');
+    </script>
+
+    <!-- Basic setup -->
+    <meta name="description" content="Live weather updates and a 3‑day forecast for your location. Shows current temperature, wind speed and conditions using Open‑Meteo.">
+    <link rel="canonical" href="https://ambknews.com/weather.html">
+
+    <!-- SEO -->
+    <meta name="author" content="AmbkNews">
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AmbkNews — Live Weather & 3‑Day Forecast">
+    <meta property="og:description" content="Live weather updates and a 3‑day forecast. Detects your location and shows temperature, wind speed and conditions powered by Open‑Meteo.">
+    <meta property="og:url" content="https://ambknews.com/weather.html">
+    <meta property="og:image" content="https://ambknews.com/images/logo.png">
+    <meta property="og:site_name" content="AmbkNews">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AmbkNews — Live Weather & 3‑Day Forecast">
+    <meta name="twitter:description" content="Live weather updates and a 3‑day forecast. Detects your location and shows temperature, wind speed and conditions powered by Open‑Meteo.">
+    <meta name="twitter:image" content="https://ambknews.com/images/logo.png">
+
+    <!-- Structured Data (JSON-LD Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://ambknews.com/weather.html",
+      "name": "AmbkNews Weather",
+      "description": "Live weather updates and a 3‑day forecast. Detects your location and shows temperature, wind speed and conditions powered by Open‑Meteo.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "AmbkNews",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ambknews.com/images/logo.png"
+        }
+      }
+    }
+    </script>
+
+    <!-- Optional -->
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+
     <style>
         /* Page-specific weather styles (mobile-first, then scale up) */
         :root{--card-bg:#ffffff;--muted:#6b7280;--accent:#0b66ff}
