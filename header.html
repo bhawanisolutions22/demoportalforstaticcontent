@@ -5,11 +5,11 @@
             <img src="/images/logo.png" height="50" width="150" alt="ambknews">
         </a>
 
-        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
             ☰
         </button>
 
-        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <nav id="main-nav" class="main-nav" role="navigation" aria-label="Main navigation">
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/national.html">National</a></li>
@@ -19,9 +19,51 @@
             </ul>
         </nav>
         <!--
-    <form class="search" role="search" onsubmit="event.preventDefault(); alert('Search stub');">
-        <input type="search" placeholder="Search articles" aria-label="Search articles">
-        <button type="submit">Search</button>
-    </form>-->
+        <form class="search" role="search" onsubmit="event.preventDefault(); alert('Search stub');">
+            <input type="search" placeholder="Search articles" aria-label="Search articles">
+            <button type="submit">Search</button>
+        </form>-->
     </div>
+
+    <script>// Mobile nav toggle: accessible, closes on outside click / Escape, and resets on resize
+        (function(){
+            const btn = document.querySelector('.nav-toggle');
+            const nav = document.getElementById('main-nav');
+            if (!btn || !nav) return;
+
+            function closeNav(){
+                btn.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('nav-open');
+            }
+
+            function openNav(){
+                btn.setAttribute('aria-expanded', 'true');
+                document.body.classList.add('nav-open');
+            }
+
+            btn.addEventListener('click', (e) => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                if (expanded) closeNav(); else openNav();
+            });
+
+            // close when clicking outside nav
+            document.addEventListener('click', (e) => {
+                if (!document.body.classList.contains('nav-open')) return;
+                if (!nav.contains(e.target) && !btn.contains(e.target)) closeNav();
+            });
+
+            // close on Escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeNav();
+            });
+
+            // reset when switching to desktop size
+            let resizeTimer;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(() => {
+                    if (window.innerWidth > 720) closeNav();
+                }, 150);
+            });
+        })();</script>
 </header>
