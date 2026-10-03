@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Weather — AmbkNews</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        /* Page-specific weather styles */
+        :root{--card-bg:#ffffff;--muted:#6b7280;--accent:#0b66ff}
+        body{background:linear-gradient(180deg,#f5f7fb,#eef3ff);min-height:100vh;display:flex;flex-direction:column}
+        main.container{max-width:900px;margin:36px auto;padding:18px}
+        .weather-wrap{display:flex;flex-direction:column;gap:18px}
+        .card{background:var(--card-bg);border-radius:12px;padding:18px;box-shadow:0 8px 24px rgba(16,24,40,0.06)}
+        .headline{display:flex;align-items:center;gap:12px}
+        h1{margin:0;font-size:1.25rem}
+        .current{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center}
+        .icon-lg{width:84px;height:84px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(11,102,255,0.08),rgba(11,102,255,0.03));font-size:40px}
+        .temp{font-size:2.1rem;font-weight:700;margin:0}
+        .conds{color:var(--muted);margin-top:6px}
+        .meta{color:var(--muted);font-size:0.95rem}
+        .wind{display:flex;align-items:center;gap:8px;margin-top:8px;color:var(--muted)}
+        .forecast{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+        .day{background:linear-gradient(180deg,#fff,#fbfdff);padding:10px;border-radius:10px;text-align:center}
+        .day .date{font-weight:600;margin-bottom:6px}
+        .day .mini-icon{font-size:20px}
+        .error{color:#9b1c1c;background:#fff6f6;padding:12px;border-radius:8px;border:1px solid rgba(155,28,28,0.06)}
+        .controls{display:flex;gap:8px;align-items:center;margin-top:8px}
+        button.refresh{background:var(--accent);color:#fff;border:0;padding:8px 12px;border-radius:8px;cursor:pointer}
+        .loading{color:var(--muted)}
+        @media (max-width:640px){
+            .forecast{grid-template-columns:1fr;}
+            .current{grid-template-columns:1fr;grid-row-gap:12px}
+            .icon-lg{width:64px;height:64px;font-size:34px}
+            .temp{font-size:1.6rem}
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <main class="container">
+        <div class="weather-wrap">
+            <section class="card" aria-labelledby="current-heading">
+                <div class="headline">
+                    <h1 id="current-heading">Current Weather</h1>
+                    <div class="meta" id="location">Detecting location…</div>
+                </div>
+
+                <div id="current" class="current" role="region" aria-live="polite">
+                    <div class="icon-lg" id="current-icon" title="weather icon">☀️</div>
+                    <div>
+                        <p class="temp" id="current-temp">—</p>
+                        <div class="conds" id="current-conds">Loading…</div>
+                        <div class="wind" id="current-wind"></div>
+                        <div class="controls">
+                            <div class="loading" id="status"></div>
+                            <button class="refresh" id="refresh">Refresh</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card" aria-labelledby="forecast-heading">
+                <h2 id="forecast-heading">3‑Day Forecast</h2>
+                <div id="forecast" class="forecast" role="list">
+                    <!-- days rendered here -->
+                </div>
+            </section>
+
+            <div id="error" class="error" style="display:none">Weather data unavailable</div>
+        </div>
+    </main>
+    <div id="footer"></div>
+
+    <script>
+        // Simple mapping of Open-Meteo weathercode to emoji/icon/text
+        const weatherMap = {
+            0: ['Clear', '☀️'],
+            1: ['Mainly clear', '🌤️'],
+            2: ['Partly cloudy', '⛅'],
+            3: ['Overcast', '☁️'],
+            45: ['Fog', '🌫️'],
+            48: ['Depositing rime fog', '🌫️'],
+            51: ['Light drizzle', '🌦️'],
+            53: ['Moderate drizzle', '🌦️'],
+            55: ['Dense drizzle', '🌧️'],
+            61: ['Slight rain', '🌧️'],
+            63: ['Moderate rain', '🌧️'],
+            65: ['Heavy rain', '⛈️'],
+            71: ['Slight snow', '🌨️'],
+            73: ['Moderate snow', '🌨️'],
+            75: ['Heavy snow', '❄️'],
+            80: ['Rain showers', '🌧️'],
+            81: ['Heavy showers', '🌧️'],
+            95: ['Thunderstorm', '⛈️']
+        };
+
+        const els = {
+            location: document.getElementById('location'),
+            currentTemp: document.getElementById('current-temp'),
+            currentConds: document.getElementById('current-conds'),
+            currentIcon: document.getElementById('current-icon'),
+            currentWind: document.getElementById('current-wind'),
+            forecast: document.getElementById('forecast'),
+            status: document.getElementById('status'),
+            errorBox: document.getElementById('error'),
+            refresh: document.getElementById('refresh')
+        };
+
+        const DEFAULT = {name: 'Ahmedabad, IN', lat: 23.0225, lon: 72.5714};
+
+        async function fetchWeather(lat, lon) {
+            const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&daily=temperature_2m_max,temperature_2m_min,weathercode&timezone=auto&windspeed_unit=kmh`;
+            const res = await fetch(url);
+            if (!res.ok) throw new Error('API request failed');
+            return res.json();
+        }
+
+        function mapWeather(code){
+            return weatherMap[code] || ['Unknown', '❔'];
+        }
+
+        function fmtDate(iso){
+            const d = new Date(iso);
+            return d.toLocaleDateString(undefined, {weekday:'short', month:'short', day:'numeric'});
+        }
+
+        async function update(lat, lon, placeName){
+            els.status.textContent = 'Updating…';
+            els.errorBox.style.display = 'none';
+            try{
+                const data = await fetchWeather(lat, lon);
+                // Current
+                const cw = data.current_weather;
+                const [condText, condIcon] = mapWeather(cw.weathercode);
+                els.currentIcon.textContent = condIcon;
+                els.currentTemp.textContent = `${Math.round(cw.temperature)}°C`;
+                els.currentConds.textContent = `${condText}`;
+                els.currentWind.innerHTML = `<span title="Wind speed">💨 ${Math.round(cw.windspeed)} km/h</span>`;
+                els.location.textContent = placeName || (data.timezone || '') ;
+
+                // Forecast — take first 3 days from daily arrays
+                const daily = data.daily;
+                els.forecast.innerHTML = '';
+                for(let i=0;i<3 && i<daily.time.length;i++){
+                    const date = daily.time[i];
+                    const tmin = Math.round(daily.temperature_2m_min[i]);
+                    const tmax = Math.round(daily.temperature_2m_max[i]);
+                    const wcode = daily.weathercode ? daily.weathercode[i] : null;
+                    const [tText, tIcon] = mapWeather(wcode);
+                    const node = document.createElement('div');
+                    node.className = 'day';
+                    node.setAttribute('role','listitem');
+                    node.innerHTML = `<div class="date">${fmtDate(date)}</div>
+                                      <div class="mini-icon">${tIcon}</div>
+                                      <div style="margin-top:6px">${tText}</div>
+                                      <div style="margin-top:8px;font-weight:600">${tmin}° / ${tmax}°</div>`;
+                    els.forecast.appendChild(node);
+                }
+                els.status.textContent = '';
+            }catch(err){
+                console.error(err);
+                els.errorBox.style.display = 'block';
+                els.status.textContent = '';
+                els.currentTemp.textContent = '—';
+                els.currentConds.textContent = 'Weather data unavailable';
+                els.currentIcon.textContent = '❔';
+                els.forecast.innerHTML = '';
+            }
+        }
+
+        function tryGeolocation(){
+            els.status.textContent = 'Detecting location…';
+            return new Promise((resolve)=>{
+                if (!navigator.geolocation){
+                    resolve(null);
+                    return;
+                }
+                const opts = {enableHighAccuracy:false,timeout:7000,maximumAge:600000};
+                navigator.geolocation.getCurrentPosition(pos=>{
+                    resolve({lat:pos.coords.latitude, lon:pos.coords.longitude});
+                }, err=>{
+                    resolve(null);
+                }, opts);
+            });
+        }
+
+        async function init(){
+            let geo = await tryGeolocation();
+            if (!geo){
+                els.location.textContent = `${DEFAULT.name} (default)`;
+                await update(DEFAULT.lat, DEFAULT.lon, DEFAULT.name);
+            }else{
+                els.location.textContent = 'Current location';
+                await update(geo.lat, geo.lon, 'Your location');
+            }
+        }
+
+        // Refresh button
+        els.refresh.addEventListener('click', ()=>{ init(); });
+
+        // Load header/footer (simple fetch) so page matches site layout
+        async function loadLayout(id, url){
+            try{ const r = await fetch(url); if(r.ok) document.getElementById(id).innerHTML = await r.text(); }catch(e){}
+        }
+        loadLayout('header','/header.html');
+        loadLayout('footer','/footer.html');
+
+        // Init on load
+        window.addEventListener('load', init);
+    </script>
+</body>
+</html>
