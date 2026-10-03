@@ -362,21 +362,17 @@ a {
 
 /* Make the icon match the text height (keeps it visually aligned) */
 .social-icon {
-    height: 1em;     /* same as current font-size */
+    height: 16px;    /* small desktop size */
     width: auto;
     display: block;
     object-fit: contain;
+    vertical-align: middle;
 }
 
-/* Slightly larger targets on small screens */
+/* Slightly larger for touch targets on small screens */
 @media (max-width: 480px) {
-    .social-links a {
-        padding: 0.5rem 0.75rem;
-        font-size: 1rem;
-    }
-
     .social-icon {
-        height: 1.1em;
+        height: 20px;
     }
 }
 
