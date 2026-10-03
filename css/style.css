@@ -413,59 +413,36 @@ a {
 }
 
 @media (max-width:720px) {
-    /* hide desktop nav, show toggle */
     .main-nav {
-        display: none;
+        display: none
     }
 
     .nav-toggle {
         display: inline-block;
-        margin-left: auto;
-        background: transparent;
-        border: 0;
-        font-size: 20px;
-        padding: 6px;
+        margin-left: auto
     }
 
-    /* When nav is opened (body.nav-open) show a stacked panel */
-    .nav-open .main-nav {
-        display: block;
-        position: absolute;
-        left: 12px;
-        right: 12px;
-        top: calc(100% + 8px); /* just below header-inner */
-        padding: 12px;
-        border-radius: 8px;
-        background: #fff;
-        box-shadow: 0 10px 30px rgba(16,24,40,0.12);
-        z-index: 120;
-    }
-
-    /* Stack nav items vertically */
-    .main-nav ul {
-        display: flex !important;
-        flex-direction: column;
-        gap: 8px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .main-nav a {
-        display: block;
-        padding: 10px 12px;
-        border-radius: 8px;
-        color: #111;
-    }
-
-    /* make active state visible on mobile */
-    .main-nav a.active {
-        background: rgba(11,102,255,0.08);
-        color: var(--brand);
-    }
-
-    /* ensure header keeps layout */
     .header-inner {
-        position: relative; /* anchor for absolute nav panel */
+        align-items: center
     }
+
+    .search {
+        display: none
+    }
+
+    .hero-text h1 {
+        font-size: 1.4rem
+    }
+}
+
+.nav-open .main-nav {
+    display: block;
+    background: #fff;
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    top: 68px;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: var(--shadow)
 }
