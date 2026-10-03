@@ -337,6 +337,49 @@ a {
     }
 }
 
+/* Footer social link + icon */
+.footer-content { text-align: center; }
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: inherit;
+    text-decoration: none;
+    padding: 0.25rem 0.35rem;
+}
+
+/* Make the icon match the text height (keeps it visually aligned) */
+.social-icon {
+    height: 1em;     /* same as current font-size */
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Slightly larger targets on small screens */
+@media (max-width: 480px) {
+    .social-links a {
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
+    }
+
+    .social-icon {
+        height: 1.1em;
+    }
+}
+
 /* Responsive */
 @media (max-width:900px) {
     .hero {
