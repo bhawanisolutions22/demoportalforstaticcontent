@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+	<url>
+		<loc>https://ambknews.com/en/archive/2026/9/index.html</loc>
+		<lastmod>2026-10-02T11:59:00+05:30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+		<image:image>
+			<image:loc>https://ambknews.com/images/archive/archivesept2026.jpeg</image:loc>
+			<image:caption>AmbkNews September  2026 Archive Cover Image</image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/business/story/cabinet-approves-epfo-wage-ceiling-hike-to-25000-per-month-202609201440.html</loc>
+		<lastmod>2026-09-20T14:40:00+05:30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/bollywood/hanuman-ansh-box-office-day-44-neem-karoli-baba-film-surpasses-300-crore-worldwide-202609201707.html</loc>
+		<lastmod>2026-09-20T17:07:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/business/story/indian-railways-approves-252-crore-for-kavach-4-0-on-lucknow-division-202609201319.html</loc>
+		<lastmod>2026-09-20T13:19:00+05:30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/business/story/upi-remains-free-for-p2p-and-most-merchant-payments-202609162105.html</loc>
+		<lastmod>2026-09-16</lastmod>
+		<image:image>
+			<image:loc>https://ambknews.com/images/articles/202609162105.png</image:loc>
+			<image:caption>UPI digital payment using a QR code at a small merchant's shop in India.</image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/business/story/unemployment-rate-declines-flagship-schemes-l-murugan-202609201042.html</loc>
+		<lastmod>2026-09-20</lastmod>
+		<image:image>
+			<image:loc>https://ambknews.com/images/articles/202609201042.jpeg</image:loc>
+			<image:caption>Union Minister L. Murugan at the Rozgar Mela handing out appointment letters.</image:caption>
+		</image:image>
+	</url>
+</urlset>

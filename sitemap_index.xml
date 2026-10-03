@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<sitemap>
+		<loc>https://ambknews.com/sitemap.xml</loc>
+		<lastmod>2026-10-03T15:44:00+05:30</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://ambknews.com/sitemap-national.xml</loc>
+		<lastmod>2026-10-03T15:44:00+05:30</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://ambknews.com/sitemap-national-archive.xml</loc>
+		<lastmod>2026-10-03T15:44:00+05:30</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://ambknews.com/sitemap-international.xml</loc>
+		<lastmod>2026-10-03T15:44:00+05:30</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://ambknews.com/sitemap-international-archive.xml</loc>
+		<lastmod>2026-10-03T15:44:00+05:30</lastmod>
+	</sitemap>
+</sitemapindex>

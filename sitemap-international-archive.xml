@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+	<url>
+		<loc>https://ambknews.com/en/international/north-korea-fires-ballistic-missile-off-east-coast-seoul-condemns-violation-of-un-resolutions-202609210741.html</loc>
+		<lastmod>2026-09-21T07:41:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/international/ukraine-launches-largest-drone-strike-on-moscow-amid-russian-parliamentary-vote-202609201609.html</loc>
+		<lastmod>2026-09-20T16:09:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/international/iran-ties-strait-of-hormuz-reopening-to-us-conditions-west-asia-travel-alert-202609201503.html</loc>
+		<lastmod>2026-09-20T15:03:00+05:30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.85</priority>
+	</url>
+</urlset>
