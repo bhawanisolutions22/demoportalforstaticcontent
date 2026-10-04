@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+	<url>
+		<loc>https://ambknews.com/en/international/iran-us-remain-divided-in-peace-talks-pezeshkian-no-surrender-202609240744.html</loc>
+		<lastmod>2026-09-24T07:44:00+00:00</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
+	</url>
 	<url>
 		<loc>https://ambknews.com/en/international/north-korea-fires-ballistic-missile-off-east-coast-seoul-condemns-violation-of-un-resolutions-202609210741.html</loc>
 		<lastmod>2026-09-21T07:41:00+05:30</lastmod>
