@@ -9,6 +9,16 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
+		<loc>https://ambknews.com/en/international/iran-insists-strait-of-hormuz-will-stay-closed-until-us-meets-conditions-202610050819.html</loc>
+		<lastmod>2026-10-05T08:19:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
+		<image:image>
+			<image:loc>https://ambknews.com/images/articles/202610050819.jpeg</image:loc>
+			<image:caption>Iranian naval patrol boats in the Strait of Hormuz during heightened tensions</image:caption>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://ambknews.com/en/international/bridge-across-dnipro-river-in-kyiv-struck-during-russian-attack-202610040610.html</loc>
 		<lastmod>2026-10-04T06:10:00+05:30</lastmod>
 		<changefreq>never</changefreq>
