@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
+	<url>
+		<loc>https://ambknews.com/en/business/story/west-bengal-clears-14454-government-jobs-launches-50000-aid-scheme-for-unmarried-women-students-202610060541.html</loc>
+		<lastmod>2026-10-06T05:41:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
+		<image:image>
+			<image:loc>https://ambknews.com/images/articles/202610060541.jpeg</image:loc>
+			<image:caption>West Bengal Chief Minister Suvendu Adhikari announcing new government jobs and Bhagini Nivedita Scheme at the state secretariat</image:caption>
+		</image:image>
+	</url>
 	<url>
 		<loc>https://ambknews.com/national.html</loc>
 		<lastmod>2026-09-20T15:18:00+05:30</lastmod>
@@ -45,12 +54,6 @@
 	<url>
 		<loc>https://ambknews.com/en/business/story/ins-sudarshini-arrives-at-alexandria-egypt-during-lokayan-26-202609250759.html</loc>
 		<lastmod>2026-09-25T07:59:00+00:00</lastmod>
-		<changefreq>never</changefreq>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>https://ambknews.com/en/business/story/bharat-taxi-expands-services-to-five-major-cities-in-uttar-pradesh-202609232028.html</loc>
-		<lastmod>2026-09-23T20:28:00+00:00</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.8</priority>
 	</url>
