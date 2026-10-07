@@ -9,6 +9,16 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
+		<loc>https://ambknews.com/en/international/pm-modi-calls-for-affordable-accessible-technology-to-empower-global-south-nations-202610070743.html</loc>
+		<lastmod>2026-10-07T07:43:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
+		<image:image>
+			<image:loc>https://ambknews.com/images/articles/202610070743.jpeg</image:loc>
+			<image:caption>Global digital connectivity and technology access with ambknews.com</image:caption>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://ambknews.com/en/international/iran-insists-strait-of-hormuz-will-stay-closed-until-us-meets-conditions-202610050819.html</loc>
 		<lastmod>2026-10-05T08:19:00+05:30</lastmod>
 		<changefreq>never</changefreq>
