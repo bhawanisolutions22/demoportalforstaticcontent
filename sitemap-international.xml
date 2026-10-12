@@ -39,7 +39,7 @@
 		<priority>0.8</priority>
 		<image:image>
 			<image:loc>https://ambknews.com/images/articles/202610070743.jpeg</image:loc>
-			<image:caption>Global digital connectivity and technology access with ambknews.com</image:caption>
+			<image:caption><![CDATA[Global digital connectivity and technology access with ambknews.com]]></image:caption>
 		</image:image>
 	</url>
 	<url>
@@ -49,7 +49,7 @@
 		<priority>0.8</priority>
 		<image:image>
 			<image:loc>https://ambknews.com/images/articles/202610050819.jpeg</image:loc>
-			<image:caption>Iranian naval patrol boats in the Strait of Hormuz during heightened tensions</image:caption>
+			<image:caption><![CDATA[Iranian naval patrol boats in the Strait of Hormuz during heightened tensions]]></image:caption>
 		</image:image>
 	</url>
 	<url>
@@ -59,7 +59,7 @@
 		<priority>0.8</priority>
 		<image:image>
 			<image:loc>https://ambknews.com/images/articles/202610040610.jpeg</image:loc>
-			<image:caption>Damaged bridge across the Dnipro river in Kyiv after Russian airstrike</image:caption>
+			<image:caption><![CDATA[Damaged bridge across the Dnipro river in Kyiv after Russian airstrike]]></image:caption>
 		</image:image>
 	</url>
 	<url>
@@ -73,7 +73,7 @@
 		<lastmod>2026-10-02T11:07:00+05:30</lastmod>
 		<image:image>
 			<image:loc>https://ambknews.com/images/articles/202610021132.jpeg</image:loc>
-			<image:caption>Flydubai flight diverted to Saudi Arabia after a reported cockpit attack</image:caption>
+			<image:caption><![CDATA[Flydubai flight diverted to Saudi Arabia after a reported cockpit attack]]></image:caption>
 			<image:thumbnail_loc>https://ambknews.com/images/articles/202610021132-thumb.jpeg</image:thumbnail_loc>
 		</image:image>
 		<changefreq>never</changefreq>
@@ -86,7 +86,7 @@
 		<priority>0.6</priority>
 		<image:image>
 			<image:loc>https://ambknews.com/images/archive/archivesept2026.jpeg</image:loc>
-			<image:caption>AmbkNews September  2026 Archive Cover Image</image:caption>
+			<image:caption><![CDATA[AmbkNews September  2026 Archive Cover Image]]></image:caption>
 		</image:image>
 	</url>
 	<url>
@@ -94,7 +94,7 @@
 		<lastmod>2026-10-01T06:07:00+05:30</lastmod>
 		<image:image>
 			<image:loc>https://ambknews.com/images/articles/202610010607.jpeg</image:loc>
-			<image:caption>PM Modi and President Trump engaged in a phone call reaffirming India-US strategic partnership.</image:caption>
+			<image:caption><![CDATA[PM Modi and President Trump engaged in a phone call reaffirming India-US strategic partnership.]]></image:caption>
 			<image:thumbnail_loc>https://ambknews.com/images/articles/202610010607-thumb.jpeg</image:thumbnail_loc>
 		</image:image>
 		<changefreq>never</changefreq>
