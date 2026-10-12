@@ -9,6 +9,12 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
+		<loc>https://ambknews.com/en/international/yemens-houthis-warn-airlines-and-travellers-to-avoid-saudi-airports-after-deadly-riyadh-strike-202610120652.html</loc>
+		<lastmod>2026-10-12T06:52:00+00:00</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
 		<loc>https://ambknews.com/en/international/future-partnerships-must-build-capabilities-not-dependencies-eam-jaishankar-in-addis-ababa-202610110830.html</loc>
 		<lastmod>2026-10-11T08:30:00+00:00</lastmod>
 		<changefreq>never</changefreq>
@@ -26,8 +32,6 @@
 		<changefreq>never</changefreq>
 		<priority>0.8</priority>
 	</url>
-	
-
 	<url>
 		<loc>https://ambknews.com/en/international/pm-modi-calls-for-affordable-accessible-technology-to-empower-global-south-nations-202610070743.html</loc>
 		<lastmod>2026-10-07T07:43:00+05:30</lastmod>
