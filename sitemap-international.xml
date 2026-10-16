@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-	
 	<url>
 		<loc>https://ambknews.com/world.html</loc>
 		<lastmod>2026-09-21T08:17:00+05:30</lastmod>
@@ -82,11 +81,10 @@
 	</url>
 	<url>
 		<loc>https://ambknews.com/en/international/flydubai-flight-dubai-tel-aviv-diverted-cockpit-incident-202610021132.html</loc>
-		<lastmod>2026-10-02T11:07:00+05:30</lastmod>
+		<lastmod>2026-10-16T06:47:00+05:30</lastmod>
 		<image:image>
 			<image:loc>https://ambknews.com/images/articles/202610021132.jpeg</image:loc>
 			<image:caption><![CDATA[Flydubai flight diverted to Saudi Arabia after a reported cockpit attack]]></image:caption>
-			<image:thumbnail_loc>https://ambknews.com/images/articles/202610021132-thumb.jpeg</image:thumbnail_loc>
 		</image:image>
 		<changefreq>never</changefreq>
 		<priority>0.8</priority>
