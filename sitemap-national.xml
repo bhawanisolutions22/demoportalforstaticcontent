@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+	<url>
+		<loc>https://ambknews.com/national.html</loc>
+		<lastmod>2026-10-18T09:17:00+05:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/business/story/india-space-economy-to-reach-45-billion-jitendra-singh-202610180902.html</loc>
+		<lastmod>2026-10-18T09:17:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
+	</url>
 	<url>
 		<loc>https://ambknews.com/en/business/story/west-bengal-clears-14454-government-jobs-launches-50000-aid-scheme-for-unmarried-women-students-202610060541.html</loc>
 		<lastmod>2026-10-06T05:41:00+05:30</lastmod>
@@ -11,12 +24,7 @@
 			<image:caption>West Bengal Chief Minister Suvendu Adhikari announcing new government jobs and Bhagini Nivedita Scheme at the state secretariat</image:caption>
 		</image:image>
 	</url>
-	<url>
-		<loc>https://ambknews.com/national.html</loc>
-		<lastmod>2026-09-20T15:18:00+05:30</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
+	
 	<url>
 		<loc>https://ambknews.com/en/business/story/indian-defence-delegation-visits-brunei-energy-security-maritime-cooperation-202610160604.html</loc>
 		<lastmod>2026-10-16</lastmod>
