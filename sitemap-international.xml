@@ -3,11 +3,16 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 	<url>
 		<loc>https://ambknews.com/world.html</loc>
-		<lastmod>2026-09-21T08:17:00+05:30</lastmod>
+		<lastmod>2026-10-19T05:53:00+05:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
-
+	<url>
+		<loc>https://ambknews.com/en/international/japan-mission-bring-back-samples-martian-moon-202610190536.html</loc>
+		<lastmod>2026-10-19T05:53:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
+	</url>
 	<url>
 		<loc>https://ambknews.com/en/international/tesla-roadster-spacex-thrusters-production-2028-202610170622.html</loc>
 		<lastmod>2026-10-17T06:22:00+05:30</lastmod>
