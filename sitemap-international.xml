@@ -3,9 +3,15 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 	<url>
 		<loc>https://ambknews.com/world.html</loc>
-		<lastmod>2026-10-27T05:52:00+05:30</lastmod>
+		<lastmod>2026-10-29T06:36:00+05:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/international/spain-train-collision-pm-sanchez-orders-probe-death-toll-68-202610290636.html</loc>
+		<lastmod>2026-10-29T06:36:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.7</priority>
 	</url>
 	<url>
 		<loc>https://ambknews.com/en/international/israel-election-2026-netanyahu-gadi-eisenkot-political-rivals-202610270552.html</loc>
