@@ -4,9 +4,15 @@
 
 	<url>
 		<loc>https://ambknews.com/national.html</loc>
-		<lastmod>2026-10-28T06:53:00+05:30</lastmod>
+		<lastmod>2026-10-31T15:00:00+05:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/business/story/india-expands-social-security-coverage-over-one-billion-people-202610311500.html</loc>
+		<lastmod>2026-10-31T15:00:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://ambknews.com/en/business/story/indian-railways-station-master-recruitment-1265-vacancies-202610280635.html</loc>
