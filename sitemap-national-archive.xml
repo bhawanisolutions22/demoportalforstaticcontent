@@ -3,6 +3,16 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
 	<url>
+		<loc>https://ambknews.com/en/archive/national/2026/10/index.html</loc>
+		<lastmod>2026-11-01T12:25:00+05:30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+		<image:image>
+			<image:loc>https://ambknews.com/images/archive/archivect2026.jpg</image:loc>
+			<image:caption>AmbkNews October  2026 Archive Cover Image</image:caption>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://ambknews.com/en/archive/national/2026/9/index.html</loc>
 		<lastmod>2026-10-25T08:00:00+05:30</lastmod>
 		<changefreq>monthly</changefreq>
@@ -10,6 +20,16 @@
 		<image:image>
 			<image:loc>https://ambknews.com/images/archive/archivesept2026.jpeg</image:loc>
 			<image:caption>AmbkNews September  2026 Archive Cover Image</image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/archive/2026/10/index.html</loc>
+		<lastmod>2026-11-01T12:25:00+05:30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+		<image:image>
+			<image:loc>https://ambknews.com/images/archive/archivect2026.jpg</image:loc>
+			<image:caption>AmbkNews October  2026 Archive Cover Image</image:caption>
 		</image:image>
 	</url>
 	<url>
