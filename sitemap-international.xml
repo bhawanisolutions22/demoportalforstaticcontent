@@ -3,9 +3,15 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 	<url>
 		<loc>https://ambknews.com/world.html</loc>
-		<lastmod>2026-11-05T06:46:00+05:30</lastmod>
+		<lastmod>2026-11-06T06:13:00+05:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/international/india-announces-500-million-credit-line-for-guyana-202611060613.html</loc>
+		<lastmod>2026-11-06T06:13:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://ambknews.com/en/international/india-canada-inaugural-defence-dialogue-industrial-research-cooperation-202611050646.html</loc>
