@@ -107,16 +107,6 @@
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://ambknews.com/en/archive/national/2026/9/index.html</loc>
-		<lastmod>2026-10-02T11:59:00+05:30</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.6</priority>
-		<image:image>
-			<image:loc>https://ambknews.com/images/articles/archivesept2026.jpeg</image:loc>
-			<image:caption>AmbkNews September  2026 Archive Cover Image</image:caption>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://ambknews.com/en/business/story/gold-slips-below-rs-1-5-lakh-per-10g-in-delhi-202609292051.html</loc>
 		<lastmod>2026-09-29T20:51:00+00:00</lastmod>
 		<changefreq>never</changefreq>

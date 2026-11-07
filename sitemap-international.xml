@@ -187,16 +187,6 @@
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://ambknews.com/en/archive/international/2026/9/index.html</loc>
-		<lastmod>2026-10-02T11:59:00+05:30</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.6</priority>
-		<image:image>
-			<image:loc>https://ambknews.com/images/archive/archivesept2026.jpeg</image:loc>
-			<image:caption><![CDATA[AmbkNews September  2026 Archive Cover Image]]></image:caption>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://ambknews.com/en/international/pm-modi-trump-reaffirm-india-us-strategic-partnership-202610010607.html</loc>
 		<lastmod>2026-10-16T06:48:00+05:30</lastmod>
 		<image:image>
