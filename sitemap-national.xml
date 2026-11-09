@@ -4,9 +4,15 @@
 
 	<url>
 		<loc>https://ambknews.com/national.html</loc>
-		<lastmod>2026-11-07T17:27:00+05:30</lastmod>
+		<lastmod>2026-11-09T08:09:00+05:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/business/story/fpis-invest-rs-38971-crore-in-indian-equities-202611090809.html</loc>
+		<lastmod>2026-11-09T08:09:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://ambknews.com/en/business/story/diwali-trade-to-cross-7-lakh-crore-delhi-sales-1-lakh-crore-202611071727.html</loc>
