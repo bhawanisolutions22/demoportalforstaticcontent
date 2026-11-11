@@ -3,9 +3,15 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 	<url>
 		<loc>https://ambknews.com/world.html</loc>
-		<lastmod>2026-11-08T15:15:00+05:30</lastmod>
+		<lastmod>2026-11-11T06:49:00+05:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/international/adnoc-vessel-damaged-in-uae-waters-202611110649.html</loc>
+		<lastmod>2026-11-11T06:49:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://ambknews.com/en/international/trump-celebrates-diwali-with-indian-american-ceos-and-entrepreneurs-202611081515.html</loc>
