@@ -3,9 +3,15 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 	<url>
 		<loc>https://ambknews.com/world.html</loc>
-		<lastmod>2026-11-11T06:49:00+05:30</lastmod>
+		<lastmod>2026-11-14T06:52:00+05:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/international/microsoft-apologises-global-outage-disrupts-services-202611140652.html</loc>
+		<lastmod>2026-11-14T06:52:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://ambknews.com/en/international/jensen-huang-resigns-nvidia-ceo-china-intelligence-allegations-202611130534.html</loc>
