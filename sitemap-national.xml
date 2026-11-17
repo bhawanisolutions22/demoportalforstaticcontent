@@ -4,9 +4,15 @@
 
 	<url>
 		<loc>https://ambknews.com/national.html</loc>
-		<lastmod>2026-11-15T06:42:00+05:30</lastmod>
+		<lastmod>2026-11-18T06:55:00+05:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/business/story/solar-power-capacity-india-reaches-175-gw-202611180655.html</loc>
+		<lastmod>2026-11-18T06:55:00+05:30</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://ambknews.com/en/business/story/punjab-records-5785-stubble-burning-cases-209-crore-fines-202611150642.html</loc>
