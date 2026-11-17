@@ -3,9 +3,15 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 	<url>
 		<loc>https://ambknews.com/world.html</loc>
-		<lastmod>2026-11-16T06:23:00+05:30</lastmod>
+		<lastmod>2026-11-17T05:36:00+05:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/international/pm-modi-attends-philippines-presidents-gala-dinner-manila-202611170536.html</loc>
+		<lastmod>2026-11-17T05:36:00+05:30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://ambknews.com/en/international/india-sri-lanka-ncc-maitri-setu-cycling-expedition-2027-202611160623.html</loc>
