@@ -4,9 +4,15 @@
 
 	<url>
 		<loc>https://ambknews.com/national.html</loc>
-		<lastmod>2026-11-20T05:49:00+05:30</lastmod>
+		<lastmod>2026-11-22T10:51:00+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/business/story/kashmir-last-local-terrorist-lateef-bhat-killed-security-impact-202611221051.html</loc>
+		<lastmod>2026-11-22T10:51:00+00:00</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://ambknews.com/en/business/story/nitin-gadkari-pushes-for-safer-roads-and-green-highways-202611200549.html</loc>
