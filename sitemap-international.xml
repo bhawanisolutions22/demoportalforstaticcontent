@@ -3,9 +3,15 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 	<url>
 		<loc>https://ambknews.com/world.html</loc>
-		<lastmod>2026-11-23T08:04:00+05:30</lastmod>
+		<lastmod>2026-11-23T18:38:00+05:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/international/india-announces-15000-crore-assistance-to-nepal-modi-balendra-shah-joint-vision-202611231838.html</loc>
+		<lastmod>2026-11-23T18:38:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://ambknews.com/en/international/us-denies-iran-f16-strike-claim-bahrain-attacks-202611230804.html</loc>
