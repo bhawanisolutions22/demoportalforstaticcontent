@@ -4,9 +4,15 @@
 
 	<url>
 		<loc>https://ambknews.com/national.html</loc>
-		<lastmod>2026-11-27T07:34:00+05:30</lastmod>
+		<lastmod>2026-11-28T05:49:00+05:30</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://ambknews.com/en/business/story/national-overseas-scholarship-students-study-abroad-202611280549.html</loc>
+		<lastmod>2026-11-28T05:49:00+05:30</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://ambknews.com/en/business/story/budget-2027-28-pre-budget-consultations-conclude-202611270809.html</loc>
